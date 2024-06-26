@@ -1,0 +1,50 @@
+LAB 3:
+
+
+
+Task 1
+
+Your IPv4 address: 192.168.1.144
+Subnet Mask: 255.255.255.0
+Your partner’s IPv4 address: 192.168.1.143
+Subnet Mask: 255.255.255.0
+Your MAC address: 00-E0-4C-68-12-52
+Your partner’s MAC address: 00-E0-4C-09-22-D2
+
+Default Gateway: 192.168.1.1
+
+ping 192.168.1.1
+
+Pinging 192.168.1.1 with 32 bytes of data:
+Reply from 192.168.1.1: bytes=32 time=7ms TTL=64
+Reply from 192.168.1.1: bytes=32 time=6ms TTL=64
+Reply from 192.168.1.1: bytes=32 time=4ms TTL=64
+Reply from 192.168.1.1: bytes=32 time=11ms TTL=64
+
+Ping statistics for 192.168.1.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 4ms, Maximum = 11ms, Average = 7ms
+
+
+Task 5:
+
+a.What is the layer 7 protocol? Hypertext Transfer Protocol
+b.What is the Layer 4 protocol? Transmission Control Protocol
+c.What is the Layer 3 protocol? Internet Protocol Version 4
+d.What is the Layer 2 protocol? Ethernet II
+
+e.What is the frame’s destination MAC address?
+Answer. 00:e0:4c:68:12:52
+
+	i.This destination’s MAC address belongs to which device? Answer. The server
+
+f.What is the destination IP address? Answer. 192.168.1.143
+
+	i.This IP address belongs to which device? Answer. The client
+
+g.What is the destination port? Answer. 59110
+
+	i.This destination port belongs to which application? 
+	Answer. Transmission Control Protocol 
+

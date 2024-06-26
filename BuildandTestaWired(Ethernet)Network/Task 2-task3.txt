@@ -1,0 +1,17 @@
+Task 2-task3
+
+Task 2:
+
+2. What command do you use to verify that the IP address assigned in step 3.1 has been successfully assigned to your Ethernet (wired) adapter? 
+	Answer. ipconfig
+
+3. What command do you use to confirm that your laptop is connected to the network? 
+	Answer. ping 192.168.1.1
+
+Task 3: 
+
+4.What command do you use to verify that the IP address assigned in step 3.1 has been successfully assigned to your Ethernet adapter?
+	Answer: ipconfig
+
+5.What command do you use to confirm that your laptop is connected to the network?
+	Answer: ping 172.16.255.254

@@ -1,0 +1,150 @@
+Lab 4
+=====
+
+Your details:
+
+Name: Isha Gadani
+
+IPv4 address: 192.168.10.112
+
+Subnet Mask: 255.255.255.0
+
+MAC address: 00-E0-4C-68-12-52
+
+===================================================
+
+Your partner's details:
+
+Name: Amrit Kaur
+
+IPv4 address: 192.168.1.113
+
+Subnet Mask: 255.255.255.0 
+
+MAC address: 00-E0-4C-09-22-D2
+
+
+
+C:\Users\ISHA>ping 192.168.10.1
+
+Pinging 192.168.10.1 with 32 bytes of data:
+Reply from 192.168.10.1: bytes=32 time=5ms TTL=64
+Reply from 192.168.10.1: bytes=32 time=3ms TTL=64
+Reply from 192.168.10.1: bytes=32 time=3ms TTL=64
+Reply from 192.168.10.1: bytes=32 time=7ms TTL=64
+
+Ping statistics for 192.168.10.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 3ms, Maximum = 7ms, Average = 4ms
+
+C:\Users\ISHA>ping 10.10.10.1
+
+Pinging 10.10.10.1 with 32 bytes of data:
+Reply from 10.10.10.1: bytes=32 time=2ms TTL=64
+Reply from 10.10.10.1: bytes=32 time=3ms TTL=64
+Reply from 10.10.10.1: bytes=32 time=5ms TTL=64
+Reply from 10.10.10.1: bytes=32 time=4ms TTL=64
+
+Ping statistics for 10.10.10.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 5ms, Average = 3ms
+
+
+
+C:\Users\ISHA>ping 10.10.10.2
+
+Pinging 10.10.10.2 with 32 bytes of data:
+Reply from 10.10.10.2: bytes=32 time=9ms TTL=63
+Reply from 10.10.10.2: bytes=32 time=12ms TTL=63
+Reply from 10.10.10.2: bytes=32 time=18ms TTL=63
+Reply from 10.10.10.2: bytes=32 time=5ms TTL=63
+
+Ping statistics for 10.10.10.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 5ms, Maximum = 18ms, Average = 11ms
+
+C:\Users\ISHA>ping 192.168.20.1
+
+Pinging 192.168.20.1 with 32 bytes of data:
+Reply from 192.168.20.1: bytes=32 time=10ms TTL=63
+Reply from 192.168.20.1: bytes=32 time=6ms TTL=63
+Reply from 192.168.20.1: bytes=32 time=15ms TTL=63
+Reply from 192.168.20.1: bytes=32 time=7ms TTL=63
+
+Ping statistics for 192.168.20.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 6ms, Maximum = 15ms, Average = 9ms
+===================================================
+
+Task 3 answers:
+
+Q6.
+
+b. Write the exact filter you used with the actual numbers:
+
+      http && ip.dst==192.168.10.112 && ip.src==192.168.20.113
+
+Q7.
+
+a.	Are they identical or different? Different 
+
+b.	Answer the following questions if you answered "different" in 7a:
+
+	  i. Explain why they do not match?
+		
+		Because we have different devices
+
+	 ii. The destination MAC corresponds to which device?
+	     	
+		Client
+
+	iii. The source MAC corresponds to which device?
+
+		Server
+
+
+
+Q8.
+
+c.	Do you see any entries for your partner's IP or MAC?  Yes
+
+i.	Which entry served to communicate with your partner's laptop?
+	Copy and paste the ARP Table entry below:
+
+	
+	
+Interface: 192.168.146.1 --- 0x9
+  Internet Address      Physical Address      Type
+  192.168.146.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.2             01-00-5e-00-00-02     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+
+Interface: 10.0.0.204 --- 0xf
+  Internet Address      Physical Address      Type
+  10.0.0.1              d4-6c-6d-59-aa-f2     dynamic
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+Interface: 192.168.194.1 --- 0x15
+  Internet Address      Physical Address      Type
+  192.168.194.255       ff-ff-ff-ff-ff-ff     static
+  224.0.0.2             01-00-5e-00-00-02     static
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+
+Submit this answer sheet on Brightspace by the deadline.
+
+Complete the post lab quiz by the deadline.
+
